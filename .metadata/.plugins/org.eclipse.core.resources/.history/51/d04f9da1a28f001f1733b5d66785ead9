@@ -1,0 +1,18 @@
+package datetime;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+public class dataHora {
+	public static void main(String[] args) {
+		
+		LocalDate d01 = LocalDate.now();
+		LocalDateTime d02 = LocalDateTime.now();
+		
+		// instanciando uma data local
+		System.out.println("d01 = " + d01);
+		
+		// instanciando uma datahora local
+		System.out.println("d01 = " + d02);
+	}
+}

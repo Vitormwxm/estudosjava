@@ -1,0 +1,18 @@
+package datetime;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class dataHora {
+	public static void main(String[] args) {
+		// instancie data,hora e convetar 
+		
+		LocalDate d01 = LocalDate.now();
+		LocalDateTime d02 = LocalDateTime.now();
+		
+		System.out.println(d02);
+		
+	}
+}

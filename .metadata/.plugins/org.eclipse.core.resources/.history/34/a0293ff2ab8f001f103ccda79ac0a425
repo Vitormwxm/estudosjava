@@ -1,0 +1,43 @@
+package datetime;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class dataHora {
+	public static void main(String[] args) {
+		
+		DateTimeFormatter fm1 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+		
+		
+		LocalDate d01 = LocalDate.now();
+		LocalDateTime d02 = LocalDateTime.now();
+		Instant d03 = Instant.now();
+		
+		LocalDate d04 = LocalDate.parse("2024-10-21");
+		LocalDateTime d05 = LocalDateTime.parse("2024-10-21T09:50:04");
+		Instant d06 = Instant.parse("2024-10-21T09:50:04Z");
+		Instant d07 = Instant.parse("2024-10-21T09:50:04-03:00");
+		
+		LocalDateTime dataformatada = LocalDateTime.parse("27/10/2024 20:30:09", fm1);
+		
+		// instanciando uma data local
+		System.out.println("d01 = " + d01);
+		// instanciando uma datahora local
+		System.out.println("d02 = " + d02);
+		// instanciando horário de londres
+		System.out.println("d03 = " + d03);
+		System.out.println();
+		
+		// transformando texto em data hora
+		System.out.println("d04 = " + d04);
+		System.out.println("d05 = " + d05);
+		System.out.println("d06 = " + d06);
+		System.out.println("d07 = " + d07);
+		System.out.println(dataformatada);
+		
+		
+		
+	}
+}

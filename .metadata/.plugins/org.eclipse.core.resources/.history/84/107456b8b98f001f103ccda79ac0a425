@@ -1,0 +1,20 @@
+package datetime;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class dataHora {
+	public static void main(String[] args) {
+		// instancie data,hora e convetar 
+		
+		LocalDateTime d01 = LocalDateTime.parse("2024-10-27T10:04:03");
+		Instant d02 = Instant.parse("2024-10-27T10:04:03-00:00");
+		
+		
+		LocalDate d03 = LocalDate.parse("27/10/2002", DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+		System.out.println(d03);
+		
+	}
+}
